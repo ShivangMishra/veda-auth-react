@@ -3,8 +3,6 @@ import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react'
 import {nodePolyfills} from "vite-plugin-node-polyfills";
 import dts from 'vite-plugin-dts';
-import {globSync} from 'glob';
-import { fileURLToPath } from "node:url";
 
 export default defineConfig({
     plugins: [dts(), react(), nodePolyfills()],
